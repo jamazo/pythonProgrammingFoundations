@@ -14,22 +14,29 @@ def draw_shapes():
 	window = turtle.Screen()
 	window.bgcolor("red")
 
+## Draws a Circle made out of squares
+
 	brad = turtle.Turtle()
 	brad.shape("turtle")
 	brad.color("white")
-	draw_square(brad)
 
-	angie = turtle.Turtle()
-	angie.shape("arrow")
-	angie.color("black")
-	angie.circle(100)
+	for i in range (0, 36):
+		draw_square(brad)
+		brad.right(10)
 
-	pedro = turtle.Turtle()
-	pedro.shape("arrow")
-	pedro.color("blue")
-	draw_triangle(pedro)
+## Draws a circle
 
+	# angie = turtle.Turtle()
+	# angie.shape("arrow")
+	# angie.color("black")
+	# angie.circle(100)
 
+## Draws a triangle
+
+	# pedro = turtle.Turtle()
+	# pedro.shape("arrow")
+	# pedro.color("blue")
+	# draw_triangle(pedro)
 
 	window.exitonclick()
 
